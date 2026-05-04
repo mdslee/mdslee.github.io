@@ -34,9 +34,9 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="backdrop-blur-md bg-background/80 border-b border-foreground/10">
-        <nav className="max-w-screen-2xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
+        <nav className="max-w-screen-2xl mx-auto px-6 md:px-12 h-16 flex items-center justify-center md:justify-between">
 
-          <div className="flex items-center gap-8 md:gap-12">
+          <div className="hidden md:flex items-center gap-8 md:gap-12">
             <Link
               to="https://www.linkedin.com/in/madisonsuminlee/"
               target="_blank"
@@ -59,7 +59,7 @@ export default function Header() {
             
           </div>
 
-          <div className="flex items-center gap-8 md:gap-12">
+          <div className="flex items-center justify-center gap-8 md:gap-12 w-full md:w-auto">
             <Link
               to="/"
               className={`font-mono text-xs tracking-widest uppercase transition-colors duration-300 hover:text-foreground ${
@@ -105,7 +105,30 @@ export default function Header() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            
+            <div className="max-w-screen-2xl mx-auto px-6 md:px-12 py-8">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+                {projects.map((project, index) => (
+                  <Link
+                    key={project.id}
+                    to={project.path}
+                    className="group"
+                  >
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.06, duration: 0.4 }}
+                    >
+                      <p className="font-mono text-[10px] text-muted-foreground mb-2 tracking-widest">
+                        Project No. {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <p className="font-heading text-sm leading-snug group-hover:text-muted-foreground transition-colors duration-300">
+                        {project.title}
+                      </p>
+                    </motion.div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
