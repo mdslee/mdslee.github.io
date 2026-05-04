@@ -101,7 +101,7 @@ export default function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="backdrop-blur-md bg-background/95 border-b border-foreground/10 overflow-hidden"
+            className="hidden md:block backdrop-blur-md bg-background/95 border-b border-foreground/10 overflow-hidden"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
