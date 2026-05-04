@@ -14,7 +14,7 @@ const maximizeVolumeCard3 = new URL(
 ).href;
 
 const maximizeVolumeCard4 = new URL(
-  "../assets/images/ME104/cover.png",
+  "../assets/images/ME104/feaCover.png",
   import.meta.url
 ).href;
 
