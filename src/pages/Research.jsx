@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import FadeIn from "../components/shared/FadeIn";
 
-const researchHeroBg = new URL("../assets/images/Research/header.png", import.meta.url).href;
+const researchHeroBg = new URL("../assets/images/Research/bg.png", import.meta.url).href;
 
 const publications = [
   {
