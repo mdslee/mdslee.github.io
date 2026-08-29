@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const session2025 = new URL("../assets/images/Research/25 session.jpeg", import.meta.url).href;
 const poster2025 = new URL("../assets/images/Research/2025-poster.png", import.meta.url).href;
-const barsPoster = new URL("../assets/images/Research/bars poster.png", import.meta.url).href;
+const barsPoster = new URL("../assets/images/Research/2025-poster.png", import.meta.url).href;
 const session2026 = new URL("../assets/images/Research/26 session.jpeg", import.meta.url).href;
 const poster2026 = new URL("../assets/images/Research/2026-poster.png", import.meta.url).href;
 
