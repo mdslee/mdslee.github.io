@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const session2025 = new URL("../assets/images/Research/25 session.jpeg", import.meta.url).href;
 const poster2025 = new URL("../assets/images/Research/2025-poster.png", import.meta.url).href;
-const barsPoster = new URL("../assets/images/Research/2025-poster.png", import.meta.url).href;
 const session2026 = new URL("../assets/images/Research/26 session.jpeg", import.meta.url).href;
 const poster2026 = new URL("../assets/images/Research/2026-poster.png", import.meta.url).href;
 
@@ -52,12 +51,6 @@ const posterSessions = [
     images: [
       { src: session2025, alt: "2025 SURI Poster Session" },
       { src: poster2025, alt: "2025 SURI research poster", contain: true, expandable: true },
-    ],
-  },
-  {
-    title: "Bay Area Robotics Symposium (BARS)",
-    images: [
-      { src: barsPoster, alt: "Bay Area Robotics Symposium research poster", contain: true, expandable: true },
     ],
   },
   {
